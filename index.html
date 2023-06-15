@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="clickButton"></button>
+    <script>
+        let costs = [
+        {
+            product_id: 1,
+            amount: 200,
+        },
+        {
+            product_id: 2,
+            amount: 300,
+        },
+        {
+            product_id: 3,
+            amount: 500,
+        }
+        ]
+
+        const initialValue = 0;
+        const sumWithInitial = costs.reduce(
+            (starting, current) => starting + current.amount, initialValue
+        );
+        console.log(sumWithInitial);
+
+
+       
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
